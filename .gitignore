@@ -37,3 +37,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# husky
+husky-*.tgz
+tsconfig.tsbuildinfo
