@@ -38,6 +38,10 @@ Project description
 
 - Node version >= v18.15.0
 - Typescript knowledge is required (Version >= v4.8.3)
+- Install all extensions below:
+  1. [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  2. [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  3. [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 ### Built With
 
