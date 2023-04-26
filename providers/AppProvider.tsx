@@ -1,17 +1,18 @@
 import React, { ReactNode } from 'react'
-import { ErrorBoundary } from '@/components'
 import { ThemeProvider } from 'context/theme'
 
+import { ErrorBoundary } from '@/components'
+
 type AppProviderProps = {
-  children: ReactNode
+	children: ReactNode
 }
 
 const AppProvider = ({ children }: AppProviderProps) => {
-  return (
-    <ErrorBoundary>
-      <ThemeProvider>{children}</ThemeProvider>
-    </ErrorBoundary>
-  )
+	return (
+		<ErrorBoundary>
+			<ThemeProvider>{children}</ThemeProvider>
+		</ErrorBoundary>
+	)
 }
 
 export default AppProvider
