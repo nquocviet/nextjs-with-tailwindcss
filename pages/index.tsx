@@ -1,11 +1,12 @@
 import React from 'react'
-import Home from '@/page-components/Home'
+
 import { withAuth } from '@/hocs'
+import Home from '@/page-components/Home'
 
 const HomePage = () => {
-  return <Home />
+	return <Home />
 }
 
 export default withAuth({
-  Component: HomePage,
+	Component: HomePage,
 })
