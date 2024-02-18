@@ -1,3 +1,5 @@
+'use client'
+
 import React, { ReactNode, useCallback, useEffect, useState } from 'react'
 
 import { useLocalStorage } from '@/hooks'

@@ -33,7 +33,18 @@
 							["^.+\\.?(css)$"]
 						]
 					}
-				]
+				],
+				"react/jsx-sort-props": [
+					2,
+					{
+						"callbacksLast": true,
+						"shorthandFirst": false,
+						"shorthandLast": true,
+						"ignoreCase": true,
+						"noSortAlphabetically": false
+					}
+				],
+				"sort-destructure-keys/sort-destructure-keys": "error"
 			}
 		}
 	],
@@ -52,14 +63,21 @@
 		"react-hooks",
 		"prettier",
 		"@typescript-eslint",
-		"simple-import-sort"
+		"simple-import-sort",
+		"sort-keys-fix",
+		"typescript-sort-keys",
+		"sort-destructure-keys"
 	],
+	"ignorePatterns": ["/*.config.js"],
 	"rules": {
 		"react/react-in-jsx-scope": "off",
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
 		"react/prop-types": "off",
 		"simple-import-sort/imports": "error",
-		"simple-import-sort/exports": "error"
+		"simple-import-sort/exports": "error",
+		"sort-keys-fix/sort-keys-fix": "error",
+		"typescript-sort-keys/interface": "error",
+		"typescript-sort-keys/string-enum": "error"
 	}
 }

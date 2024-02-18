@@ -3,23 +3,19 @@
 		"baseUrl": "./",
 		"paths": {
 			"@/*": ["*"],
-			"@/api": ["api/"],
+			"@/app": ["app/"],
 			"@/components": ["components/"],
+			"@/config/*": ["config/*"],
 			"@/constants/*": ["constants/*"],
 			"@/context": ["context/"],
-			"@/features/*": ["features/*"],
-			"@/hocs": ["hocs/"],
 			"@/hooks": ["hooks/"],
-			"@/layouts": ["layouts/"],
 			"@/lib/*": ["lib/*"],
-			"@/page-components/*": ["page-components/*"],
 			"@/pages/*": ["pages/*"],
 			"@/providers": ["providers/"],
 			"@/public/*": ["public/*"],
-			"@/routes": ["routes/"],
 			"@/styles/*": ["styles/*"],
-			"@/utils": ["utils/"],
-			"@/validators/*": ["validators/*"]
+			"@/types": ["types/"],
+			"@/utils": ["utils/"]
 		},
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
@@ -42,8 +38,19 @@
 		"target": "es2018",
 		"incremental": true,
 		"noImplicitAny": false,
-		"allowJs": true
+		"allowJs": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		]
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.config.js"],
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.config.js",
+		".next/types/**/*.ts"
+	],
 	"exclude": ["node_modules"]
 }

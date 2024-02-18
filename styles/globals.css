@@ -4,7 +4,7 @@
 
 :root {
 	--white: 255 255 255;
-	--black: 29 41 57;
+	--black: 11 6 2;
 
 	--primary-25: 254 253 240;
 	--primary-50: 254 251 232;
@@ -140,7 +140,7 @@
 }
 
 body {
-	color: var(--black);
+	color: rgb(var(--black));
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-text-md);
 	line-height: var(--lh-text-md);
@@ -179,17 +179,4 @@ input::-webkit-inner-spin-button {
 
 input[type='number'] {
 	-moz-appearance: textfield;
-}
-
-#nprogress .bar {
-	background: rgb(var(--primary-300)) !important;
-}
-
-#nprogress .peg {
-	box-shadow: 0 0 10px rgb(var(--primary-300)), 0 0 5px rgb(var(--primary-300));
-}
-
-#nprogress .spinner-icon {
-	border-top-color: rgb(var(--primary-300));
-	border-left-color: rgb(var(--primary-300));
 }

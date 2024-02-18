@@ -4,8 +4,8 @@ export const formatDate = (
 	locales: string | string[] = 'en-US'
 ): string => {
 	const defaultOptions: Intl.DateTimeFormatOptions = {
-		month: 'long',
 		day: 'numeric',
+		month: 'long',
 		year: 'numeric',
 	}
 	const options = opts || defaultOptions

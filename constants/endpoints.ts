@@ -1,3 +1,3 @@
-export const AUTH_URL = {
+export const API_URL = {
 	LOGIN: '/login',
 } as const
